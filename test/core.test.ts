@@ -1,0 +1,1 @@
+import {expect,it} from 'vitest';import {SegmentMap} from '../src/index.js';it('looks up a segment',()=>{const x=new SegmentMap();x.add({generatedLine:1,generatedColumn:0,source:'a.ts',originalLine:1,originalColumn:0});expect(x.lookup(1,4)?.source).toBe('a.ts')});
